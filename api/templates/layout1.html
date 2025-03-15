@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-dark bg-success">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{{ url_for('images') }}">Photos</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                <li><a href="{{ url_for('projects') }}">Project</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('resume') }}">Resume</a></li>
+
+            </ul>
+        </div>
+    </nav>
+</head>
+
+
+<head>
+    <title>Home</title>
+    <style media="screen">
+        body {
+            background-color: lightblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        container:hover {
+            color: white
+        }
+        
+        container {
+            margin: auto;
+            border: 3px solid #73AD21;
+        }
+    </style>
+
+
+    <div class="container">
+        <nav>
+            <ul class="menu">
+
+            </ul>
+        </nav>
+    </div>
+</head>
+
+<body>
+
+
+
+
+    {% block content %} {% endblock %}
+
+    <footer>
+
+
+
+        <p id="footer">© Copyright 2021-2025. All Rights Reserved. | Shankar Deuja</p>
+
+    </footer>
+</body>
+
+</html>

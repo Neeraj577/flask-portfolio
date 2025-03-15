@@ -1,0 +1,37 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>Computer science</h3>
+            <img src="../static/img/cs.jpg" style="width: 100%;">
+            <p>I have been studing Computer Science from my high School.</p>
+            <p>I have studied computer science fundamental in my college.</p>
+            <p>I am expecting to have associate degree in December 2021</p>
+            <p>i almost finish most of my major classes for <strong>science and maths</strong> . I am just waiting to fininsh the General courses.</p>
+            <ol>The CLasses I have taken includes
+                <li>Python programming</li>
+                <li>Unix/Linux</li>
+                <li> CalculasI, II, III</li>
+                <li>Disrete Mathmetics</li>
+            </ol>
+        </div>
+        <div class="col-sm-4">
+            <h3>Adventures</h3>
+            <img src="../static/img/bg.jpg" style="width: 100%;">
+            <p>There are many things I want to do in my life.</p>
+            <p>Among them Sky-Diving is im my next bucket list. I have already done bungee jumping in Nepal</p>
+            <p>Below is photograph for my bungee-jumping.</p>
+        </div>
+        <div class="col-sm-4">
+            <a href="{{ url_for('resume')}}" <h3>Resume</h3></a>
+
+
+            <p>Click the Resume to see my Resume</p>
+
+            <p>I dont Have any work experience in my computer science field but I have done several projects to show case my ability.</p>
+            <iframe src="https://www.youtube.com/embed/pycvTVXg52c " title="soccer "></iframe>
+        </div>
+    </div>
+</div>
+{% endblock %}
