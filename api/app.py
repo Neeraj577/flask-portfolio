@@ -1,10 +1,29 @@
-from flask import Flask, render_template, request, abort, send_from_directory
+from flask import Flask, render_template, request, abort, send_from_directory, url_for, redirect
 import os
 
 app = Flask(__name__)
 
 
+
 @app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/success/<name>')
+def success(name):
+    return f"<h2> Welcome to the page Chanp:{name}.</h2>"
+
+@app.route('/login', methods = ["POST", "GET"])
+def login():
+    if request.method == "POST":
+        user = request.form.get('nm')
+        return redirect(url_for('success', name=user))
+    else:
+        
+        return render_template('login.html') 
+
+
+
 def home():
     return render_template('index.html')
 
